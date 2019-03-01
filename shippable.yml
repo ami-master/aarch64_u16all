@@ -11,7 +11,7 @@ services:
   - couchdb #1.6.0 
   - elasticsearch #6.2.4
   - memcached #1.5.12 
-  - mongodb #4.0.5
+  - mongodb #4.0.6
   - postgres #9.5 
   - rabbitmq #3.6.15 
   - redis  #5.0.3
@@ -49,7 +49,7 @@ build:
     - sleep 5
     - curl http://127.0.0.1:5984/ #1.6.0 
     - dpkg -s rabbitmq-server | grep  Version #3.6.15 
-    - mongod --version #4.0.5
+    - mongod --version #4.0.6
     - docker pull shippabledocker/sample_node_pvt:ecr
  
 integrations:
